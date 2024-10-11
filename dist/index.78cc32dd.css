@@ -1,0 +1,700 @@
+@import "https://fonts.googleapis.com/css?family=Anonymous Pro";
+@import "https://fonts.googleapis.com/css?family=Bungee";
+@import "https://fonts.googleapis.com/css?family=Acme";
+@import "https://fonts.googleapis.com/css?family=LXGW WenKai Mono TC";
+@import "https://fonts.googleapis.com/css?family=Alata";
+@import "https://fonts.googleapis.com/css?family=Assistant";
+@import "https://fonts.googleapis.com/css?family=Alatsi";
+@import "https://fonts.googleapis.com/css?family=Cabin Sketch";
+@import "https://fonts.googleapis.com/css?family=Afacad";
+.main_nav {
+  background-color: #34343b;
+  display: block;
+  position: relative;
+  box-shadow: 0 5px 5px #2f2d2d;
+}
+
+.main_nav .aboutme .nav_bar_container {
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  display: flex;
+}
+
+.main_nav .aboutme .nav_bar_container .my_log a svg .atag {
+  fill: none;
+  stroke: #ffc86a;
+  stroke-width: 3px;
+  stroke-dasharray: 220;
+  font-family: Bungee;
+  font-size: 8rem;
+}
+
+.main_nav .aboutme .nav_bar_container .nav_btn {
+  display: block;
+  position: relative;
+}
+
+.main_nav .aboutme .nav_bar_container .nav_btn button {
+  color: #ffc86a;
+  background-color: #0000;
+  border: 1px solid #ffc86a;
+  width: 13rem;
+  height: 4rem;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.main_nav .aboutme .nav_bar_container .nav_btn button span {
+  position: absolute;
+}
+
+.main_nav .aboutme .nav_bar_container .nav_btn button span svg {
+  position: absolute;
+  top: -13px;
+  left: -10px;
+  transform: scale(.5);
+}
+
+.main_nav .aboutme .nav_link {
+  column-gap: 4rem;
+  display: flex;
+}
+
+.about_me {
+  width: 100%;
+  height: 50rem;
+  position: relative;
+}
+
+.about_me .describe_me {
+  position: absolute;
+  top: 35%;
+  left: 20%;
+}
+
+.about_me .describe_me p {
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+.about_me .describe_me p strong {
+  color: #fed48c;
+}
+
+.about_me .describe_me button {
+  color: #fed48c;
+  background-color: #0000;
+  border: 3px solid #fed48c;
+  border-radius: 8px;
+  width: 16rem;
+  height: 6rem;
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+
+.about_me .socialmedia {
+  flex-direction: column;
+  row-gap: 2rem;
+  display: flex;
+  position: absolute;
+  top: 20%;
+  left: 95%;
+  transform: scale(.7);
+}
+
+.about_me .socialmedia li hr {
+  border: none;
+  border-left: 2px solid #ffc86a;
+  height: 20rem;
+  position: relative;
+  left: 2rem;
+}
+
+.myname {
+  fill: none;
+  stroke: #ffc86a;
+  stroke-width: 1px;
+  stroke-dasharray: 110;
+  font-family: Bungee;
+  font-size: 3rem;
+}
+
+.about .about_main {
+  margin: 10rem;
+}
+
+.about .about_main #about_content {
+  font-size: 2rem;
+}
+
+.about .about_main #about_content h1 {
+  text-align: start;
+}
+
+.about .about_main #about_content .abour_cont {
+  column-gap: 2rem;
+  margin: 4rem;
+  display: flex;
+  position: relative;
+}
+
+.about .about_main #about_content .abour_cont hr {
+  border: none;
+  border-top: 2px solid #fed48c;
+  width: 35rem;
+  position: relative;
+  top: 12px;
+}
+
+.about .about_main #about_content .abour_cont p .about_hig {
+  color: #fed48c;
+}
+
+.about .about_main .about_skils {
+  font-size: 2rem;
+  position: relative;
+}
+
+.about .about_main .about_skils .skills_icon {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  display: flex;
+}
+
+.about .about_main .about_skils .skills_icon .skills {
+  cursor: pointer;
+  background-color: #3d3e42;
+  border-radius: 16px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 28rem;
+  height: 30rem;
+  padding: 3rem auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.about .about_main .about_skils .skills_icon .skills .skills-hover {
+  visibility: hidden;
+  background-color: #0000;
+  border: 1px solid #f0bf6b;
+  border-radius: 16px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: all .5s;
+  display: flex;
+  position: absolute;
+  overflow: hidden;
+}
+
+.about .about_main .about_skils .skills_icon .skills .skills-hover p {
+  text-align: center;
+  transform: translate(0 -50%);
+  font-size: 1.2rem;
+  position: absolute;
+  top: 60%;
+}
+
+.about .about_main .about_skils .skills_icon .skills .skills-hover div {
+  background-color: #ffffff4d;
+  border-radius: 24px;
+  width: 60%;
+  height: 2%;
+  position: relative;
+  top: 5%;
+}
+
+.about .about_main .about_skils .skills_icon .skills .skills-hover div div {
+  background-color: #f0bf6b;
+  width: 0%;
+  height: 100%;
+  transition: all .5s linear;
+}
+
+.about .about_main .about_skils .skills_icon .skills:hover .skills-hover {
+  visibility: visible;
+  background-color: #000c;
+}
+
+.about .about_main .about_skils .skills_icon .skills .skill-icon {
+  position: relative;
+  top: 3rem;
+}
+
+.about .about_main .about_skils .skills_icon .skills .skill-name {
+  font-size: 3rem;
+  position: relative;
+  bottom: 2rem;
+}
+
+#portfolio_content {
+  margin: 10rem;
+}
+
+#portfolio_content h1 {
+  margin-bottom: 6rem;
+}
+
+#portfolio_content .work_ex {
+  display: none;
+  position: relative;
+}
+
+#portfolio_content .work_ex hr {
+  border: none;
+  border-top: 2px solid #fed48c;
+  width: 100vw;
+  margin-bottom: 3rem;
+  position: relative;
+  right: 10rem;
+}
+
+#portfolio_content .work_ex button {
+  opacity: .5;
+  color: #ffc86a;
+  background-color: #0000;
+  border: .5px solid #ffc86a80;
+  padding: 5px;
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: -5rem;
+  right: 10rem;
+}
+
+#portfolio_content .work_ex .ex_close:hover {
+  opacity: 1;
+  border: .5px solid #ffc86a;
+}
+
+#portfolio_content .work_ex div {
+  display: none;
+}
+
+#portfolio_content .work_ex div .ex_about {
+  justify-content: space-between;
+  display: flex;
+}
+
+#portfolio_content .work_ex div .ex_about h2 {
+  color: #fed48c;
+  font-family: Afacad;
+  font-size: 4rem;
+}
+
+#portfolio_content .work_ex div h3 {
+  color: #fed48c;
+  font-family: Afacad;
+  font-size: 3rem;
+}
+
+#portfolio_content .work_ex div ul li {
+  letter-spacing: 2px;
+  color: #fff;
+  width: 80rem;
+  margin: auto auto 3rem;
+  font-family: Assistant;
+  list-style-type: circle !important;
+}
+
+.portfolios_bio {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin: auto 6rem;
+  transition: all 1s linear;
+  display: flex;
+}
+
+.portfolios_bio .portfolios_bio:active {
+  display: flex;
+}
+
+.portfolios_bio .portfolios {
+  background-image: url("guess.08ba1843.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 37rem;
+  height: 40rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolios_bio .portfolios:hover .portfolios_hover {
+  opacity: 1;
+  transform: translate(0%);
+}
+
+.portfolios_bio .portfolios_hover {
+  text-align: center;
+  opacity: 0;
+  background-color: #0009;
+  width: 100%;
+  height: 100%;
+  padding: 5rem;
+  transition: all .2s linear;
+  position: absolute;
+  transform: translate(0%, 50%);
+}
+
+.portfolios_bio .portfolios_hover .portfolios_links {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+  transform: translate(0%, 60%);
+}
+
+.portfolios_bio .portfolios_hover .portfolios_links h2 {
+  font-family: Alata;
+}
+
+.portfolios_bio .portfolios_hover .portfolios_links span {
+  font-family: Assistant;
+  font-size: 15px;
+}
+
+.portfolios_bio .portfolios_hover .portfolios_links button {
+  color: #fed48c;
+  background-color: #0000;
+  border: 1px solid #ffc86a;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.experience-main {
+  background-color: #34343b;
+  padding-bottom: 3rem;
+  display: block;
+  position: relative;
+  box-shadow: 0 -5px 10px #0000004d, 0 5px 10px #0000004d;
+}
+
+.experience-main .experience h1 {
+  text-align: start;
+  position: relative;
+  top: -30px;
+}
+
+.experience-main .experience .experience_2021 {
+  grid-template-columns: 15rem 10rem 1fr;
+  margin-bottom: 6rem;
+  display: grid;
+}
+
+.experience-main .experience .experience_2021 .experience_year {
+  position: relative;
+  bottom: 20px;
+  left: 50px;
+}
+
+.experience-main .experience .experience_2021 .grid_2 {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.experience-main .experience .experience_2021 .grid_2 .experience_high {
+  position: absolute;
+  top: -40px;
+}
+
+.experience-main .experience .experience_2021 .grid_2 .experience_hr_2021 {
+  border: none;
+  border-left: 3px solid #e5e4e7;
+  height: 4rem;
+  position: absolute;
+  top: 25px;
+}
+
+.experience-main .experience .experience_2021 .about_experience_2021 .experience_about {
+  justify-content: space-between;
+  display: flex;
+}
+
+.experience-main .experience .experience_2021 .about_experience_2021 .experience_about h2 {
+  font-family: Alatsi;
+}
+
+.experience-main .experience .experience_2021 .about_experience_2021 .experience_about p {
+  font-size: "LXGW WenKai Mono TC";
+}
+
+.experience-main .experience .experience_2021 .about_experience_2021 .experience_describe {
+  font-size: "LXGW WenKai Mono TC";
+  line-height: 3rem;
+}
+
+.contact {
+  background-color: #3d3f43;
+  margin-top: 10rem;
+  position: relative;
+}
+
+.contact .contact_container {
+  flex-direction: row;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.contact .contact_container .contact_container1 .form_check {
+  flex-flow: column wrap;
+  display: flex;
+}
+
+.contact .contact_container .contact_container1 .form_check span {
+  position: relative;
+}
+
+.contact .contact_container .contact_container1 .form_check span label {
+  position: absolute;
+}
+
+.contact .contact_container .contact_container1 .form_check span label svg {
+  transform: scale(.6);
+}
+
+.contact .contact_container .contact_container1 .form_check span input {
+  color: #e5e4e7;
+  background-color: #0000;
+  border: 1px solid #ffc86a;
+  width: 35rem;
+  height: 4rem;
+  margin-bottom: 2rem;
+  padding: 1rem 4rem;
+}
+
+.contact .contact_container .contact_container1 .form_check span input::placeholder {
+  padding: 3rem;
+}
+
+.contact .contact_container .contact_container1 .form_check span input:focus {
+  outline: none;
+}
+
+.contact .contact_container .contact_container1 .form_check span textarea {
+  resize: none;
+  color: #e5e4e7;
+  background-color: #0000;
+  border: 1px solid #ffc86a;
+  width: 35rem;
+  height: 6rem;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+  padding-left: 4rem;
+}
+
+.contact .contact_container .contact_container1 .form_check span textarea::placeholder {
+  padding: 1rem 0 0 3rem;
+}
+
+.contact .contact_container .contact_container1 .form_check span textarea:focus {
+  outline: none;
+}
+
+.contact .contact_container .contact_container1 .form_check .submit_iddrag {
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  display: flex;
+}
+
+.contact .contact_container .contact_container1 .form_check .submit_iddrag .file_drag {
+  border: 1px solid #ffc86a;
+  height: 4rem;
+  display: none;
+  position: relative;
+  top: -10px;
+}
+
+.contact .contact_container .contact_container1 .form_check .submit_iddrag .file_drag .drag_drop {
+  width: 8rem;
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, -50%);
+}
+
+.contact .contact_container .contact_container1 .form_check .submit_iddrag span #file_id {
+  opacity: 0;
+}
+
+.contact .contact_container .contact_container1 .form_check .submit_iddrag span input {
+  width: 15rem;
+}
+
+.contact .contact_container .contact_container2 {
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  display: flex;
+}
+
+.contact .contact_container .contact_container2 div {
+  position: relative;
+}
+
+.contact .contact_container .contact_container2 div span {
+  position: absolute;
+  top: -1px;
+  left: 3px;
+}
+
+.contact .contact_container .contact_container2 div span .mail_svg {
+  transform: scale(.5);
+}
+
+.contact .contact_container .contact_container2 div button {
+  color: #ffc86a;
+  background-color: #30333a;
+  border: none;
+  width: 300px;
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+.contact .contact_container .contact_container2 .btn_phone, .contact .contact_container .contact_container2 .btn_address {
+  color: #ffc86a;
+  text-align: center;
+  background-color: #30333a;
+  border: none;
+  width: 300px;
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+.contact fieldset {
+  border: none;
+  border-top: 3px solid #ffc86a;
+  position: relative;
+}
+
+.contact fieldset:first-child {
+  top: -37px;
+}
+
+.contact fieldset:last-child {
+  top: 25px;
+}
+
+.contact fieldset .contact_me, .contact fieldset .contact_me2 {
+  font-family: Alata;
+  font-size: 5rem;
+}
+
+.contact fieldset legend {
+  text-align: center;
+  margin: auto;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  font-size: 2rem;
+  display: flex;
+}
+
+.contact fieldset legend li > a > svg {
+  transform: scale(.6);
+}
+
+.thanks_messahe {
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  display: flex;
+}
+
+.thanks_messahe h1 {
+  color: #ffc86a;
+  font-family: Cabin Sketch;
+  font-size: 6rem;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0%;
+  padding: 0%;
+}
+
+:focus {
+  outline-offset: 5px;
+  outline: .5px solid #ffc86a;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  color: #e5e4e7;
+  background-color: #30333a;
+  width: 100vw;
+  padding: auto 4rem;
+  font-size: 2rem;
+  overflow-x: hidden;
+}
+
+.main_container {
+  display: block;
+  position: relative;
+}
+
+.aboutme, .about_main, .Portfolio_content, .experience, .contact_main, .contact_container {
+  margin: auto 4rem;
+  font-family: Anonymous Pro;
+  font-size: 2rem;
+  display: block;
+  position: relative;
+}
+
+.about_main, .Portfolio_content, .experience {
+  margin: 10rem;
+}
+
+.contact_container {
+  margin: auto 10rem;
+}
+
+h1 {
+  text-align: center;
+  color: #f8f9f8;
+  margin-bottom: 3rem;
+  font-family: Acme;
+}
+
+p {
+  color: #e5e4e7;
+  font-family: LXGW WenKai Mono TC;
+  line-height: 3rem;
+}
+
+li {
+  font-size: 2rem;
+  list-style-type: none;
+}
+
+li a {
+  color: #96989b;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #f8f9f8;
+}
+
+button {
+  cursor: pointer;
+}
+/*# sourceMappingURL=index.78cc32dd.css.map */

@@ -1,0 +1,85 @@
+@import "variables";
+@import "navbar";
+@import "aboutme";
+@import "about";
+@import "portfolio";
+@import "experience";
+@import "contact";
+/* background color  */
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: inherit;
+}
+*:focus {
+  outline: 0.5px solid $primary--font-highlight-color;
+  outline-offset: 5px;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $primary--background-color;
+  color: $primary--font--color;
+  padding: auto 4rem;
+  font-size: 2rem;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.main_container {
+  display: block;
+  position: relative;
+}
+.aboutme,
+.about_main,
+.Portfolio_content,
+.experience,
+.contact_main,
+.contact_container {
+  display: block;
+  position: relative;
+  margin: auto 4rem;
+  font-family: $font_nav;
+  font-size: 2rem;
+}
+.about_main,
+.Portfolio_content,
+.experience {
+  margin: 10rem;
+}
+
+.contact_container {
+  margin: auto 10rem;
+}
+
+h1 {
+  text-align: center;
+  font-family: $font_header;
+  color: $primary--font-header-color;
+  margin-bottom: 3rem;
+}
+
+p {
+  font-family: $font_pTag;
+  line-height: 3rem;
+  color: $primary--font--color;
+}
+li {
+  list-style-type: none;
+  font-size: 2rem;
+
+  a {
+    text-decoration: none;
+    color: $secondary--a-active-color;
+    &:hover {
+      color: $primary--a-active-color;
+    }
+  }
+}
+
+button {
+  cursor: pointer;
+}

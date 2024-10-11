@@ -1,0 +1,56 @@
+.main_nav {
+  background-color: $secondary--background-color;
+  display: block;
+  position: relative;
+  box-shadow: 0px 5px 5px #2f2d2d;
+  .aboutme {
+    .nav_bar_container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem;
+      .my_log {
+        a {
+          svg {
+            .atag {
+              fill: none;
+              font-size: 8rem;
+              stroke: $primary--font-highlight-color;
+              font-family: $font_myLog;
+              stroke-width: 3;
+              stroke-dasharray: 220;
+            }
+          }
+        }
+      }
+
+      .nav_btn {
+        display: block;
+        position: relative;
+        button {
+          background-color: transparent;
+          border: none;
+          position: relative;
+          width: 13rem;
+          border: 1px solid $primary--font-highlight-color;
+          height: 4rem;
+          color: $primary--font-highlight-color;
+          font-size: 1.5rem;
+          span {
+            position: absolute;
+            svg {
+              position: absolute;
+              transform: scale(0.5);
+              top: -13px;
+              left: -10px;
+            }
+          }
+        }
+      }
+    }
+    .nav_link {
+      display: flex;
+      column-gap: 4rem;
+    }
+  }
+}

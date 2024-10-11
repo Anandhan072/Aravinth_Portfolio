@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Anonymous Pro");
+@import url("https://fonts.googleapis.com/css?family=Bungee");
+@import url("https://fonts.googleapis.com/css?family=Acme");
+@import url("https://fonts.googleapis.com/css?family=LXGW WenKai Mono TC");
+@import url("https://fonts.googleapis.com/css?family=Alata");
+@import url("https://fonts.googleapis.com/css?family=Assistant");
+@import url("https://fonts.googleapis.com/css?family=Alatsi");
+@import url("https://fonts.googleapis.com/css?family=Cabin Sketch");
+@import url("https://fonts.googleapis.com/css?family=Afacad");
+@import url("https://fonts.googleapis.com/css?family=Assistant");
+
+$font_nav: "Anonymous Pro"; // nav link font
+$font_myLog: "Bungee"; // my logo
+$font_header: "Acme"; // header
+$font_pTag: "LXGW WenKai Mono TC"; // p tag
+$font_h2: "Alata"; //h2 tag
+$font_hover: "Assistant";
+$font_experience: "Alatsi";
+$font_thanks: "Cabin Sketch";
+$font_ex_head: "Afacad";
+$font_ex_p: "Assistant";
+
+$primary--background-color: #30333a;
+$secondary--background-color: #34343b;
+$content--background-color: #3d3f43;
+
+$primary--font-highlight-color: #ffc86a;
+
+/* a tag color */
+$primary--a-active-color: #f8f9f8;
+$secondary--a-active-color: #96989b;
+
+/* font color */
+$primary--font--color: #e5e4e7;
+$primary--font-header-color: #f8f9f8;
+$primary--font-light-color: #fed48c;
+
+/* skill active color */
+$active-skill-color: #f0bf6b;
+$inactive-skill-color: #3d3e42;
+$font-skill-color: #fefeff;
+
+/*profile hover */
+
+$profile--background-hover: rgb(0, 0, 0, 0.6);
+
+/// this is for contact me _contact
+@mixin card-contact {
+  border: none;
+  background-color: $primary--background-color;
+  color: $primary--font-highlight-color;
+  font-size: 1.3rem;
+  width: 300px;
+  padding: 1rem;
+}
