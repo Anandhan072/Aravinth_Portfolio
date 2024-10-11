@@ -4,21 +4,26 @@
     margin-bottom: 6rem;
   }
 
+  hr {
+    position: relative;
+    border: none;
+    border-top: 2px solid $primary--font-light-color;
+    width: 100vw;
+    right: 10rem;
+    margin-bottom: 3rem;
+    visibility: hidden;
+  }
+
   .work_ex {
     position: relative;
-    display: none;
-    hr {
-      position: relative;
-      border: none;
-      border-top: 2px solid $primary--font-light-color;
-      width: 100vw;
-      right: 10rem;
-      margin-bottom: 3rem;
-    }
+
+    overflow-y: scroll;
+    transition: height 1s linear;
+    height: 0px;
+
     button {
-      position: absolute;
-      right: 10rem;
-      bottom: -5rem;
+      position: relative;
+      right: -85%;
       font-size: 1.5rem;
       background-color: transparent;
       border: 0.5px solid rgb(255, 200, 106, 0.5);
@@ -65,14 +70,13 @@
 .portfolios_bio {
   display: flex;
   gap: 4rem;
+  height: 50rem;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   margin: auto 6rem;
-  transition: all 1s linear;
-  .portfolios_bio:active {
-    display: flex;
-  }
+  transition: height 1s linear;
+  overflow-y: hidden;
 
   .portfolios {
     background-image: url("../img/portfolio_img/guess.svg");
@@ -81,7 +85,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    overflow: hidden;
+    overflow-y: hidden;
+
     &:hover .portfolios_hover {
       transform: translate(0%, 0%);
       opacity: 1;
@@ -123,4 +128,12 @@
       }
     }
   }
+}
+
+.portfolios_bio_height {
+  height: 0px;
+}
+
+.work_ex_height {
+  height: 60rem !important;
 }

@@ -15,6 +15,8 @@ const AddWorkEx = document.querySelector(".work_ex");
 const allShowEx = document.querySelector(".portfolios_bio");
 const closEx = document.querySelector(".ex_close");
 
+const hr_el = document.querySelector(".hr_el");
+
 let skillsEl = "";
 let percentage = 0;
 let offsetValue = 0;
@@ -172,17 +174,22 @@ const addPortFolio = function () {
     acc.addEventListener("click", function (a) {
       a.preventDefault();
       console.log(a);
-      allShowEx.style.display = "none";
-      AddWorkEx.style.display = "block";
+      allShowEx.classList.toggle("portfolios_bio_height");
+      AddWorkEx.classList.toggle("work_ex_height");
       exValue = document.querySelector(`.${a.target.dataset.ex}`);
       exValue.style.display = "block";
+      hr_el.style.visibility = "visible";
     });
   });
   closEx.addEventListener("click", function (a) {
     a.preventDefault();
-    allShowEx.style.display = "flex";
-    AddWorkEx.style.display = "none";
-    exValue.style.display = "none";
+    allShowEx.classList.toggle("portfolios_bio_height");
+    AddWorkEx.classList.toggle("work_ex_height");
+    setTimeout(function () {
+      exValue.style.display = "none";
+    }, 1000);
+
+    hr_el.style.visibility = "hidden";
   });
 };
 

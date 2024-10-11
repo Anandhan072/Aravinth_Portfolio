@@ -218,22 +218,24 @@
 #portfolio_content h1 {
   margin-bottom: 6rem;
 }
-#portfolio_content .work_ex {
-  position: relative;
-  display: none;
-}
-#portfolio_content .work_ex hr {
+#portfolio_content hr {
   position: relative;
   border: none;
   border-top: 2px solid #fed48c;
   width: 100vw;
   right: 10rem;
   margin-bottom: 3rem;
+  visibility: hidden;
+}
+#portfolio_content .work_ex {
+  position: relative;
+  overflow-y: scroll;
+  transition: height 1s linear;
+  height: 0px;
 }
 #portfolio_content .work_ex button {
-  position: absolute;
-  right: 10rem;
-  bottom: -5rem;
+  position: relative;
+  right: -85%;
   font-size: 1.5rem;
   background-color: transparent;
   border: 0.5px solid rgba(255, 200, 106, 0.5);
@@ -275,14 +277,13 @@
 .portfolios_bio {
   display: flex;
   gap: 4rem;
+  height: 50rem;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   margin: auto 6rem;
-  transition: all 1s linear;
-}
-.portfolios_bio .portfolios_bio:active {
-  display: flex;
+  transition: height 1s linear;
+  overflow-y: hidden;
 }
 .portfolios_bio .portfolios {
   background-image: url("../img/portfolio_img/guess.svg");
@@ -291,7 +292,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 .portfolios_bio .portfolios:hover .portfolios_hover {
   transform: translate(0%, 0%);
@@ -331,6 +332,14 @@
   padding: 1rem;
   border-radius: 8px;
   background-color: transparent;
+}
+
+.portfolios_bio_height {
+  height: 0px;
+}
+
+.work_ex_height {
+  height: 60rem !important;
 }
 
 .experience-main {
